@@ -1,0 +1,11 @@
+{
+  "name": "gravity-combat",
+  "version": "0.1.0",
+  "files": [
+    "gravity_combat_bg.wasm",
+    "gravity_combat.js",
+    "gravity_combat.d.ts"
+  ],
+  "browser": "gravity_combat.js",
+  "types": "gravity_combat.d.ts"
+}
