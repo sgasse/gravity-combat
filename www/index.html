@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="canvasWrapper">
+      <canvas id="game"></canvas>
+    </div>
+
+    <script src="./pkg/gravity_combat.js"></script>
+    <script>
+      const { wasm_main } = wasm_bindgen;
+
+      async function run() {
+        await wasm_bindgen("./pkg/gravity_combat_bg.wasm");
+
+        wasm_main();
+      }
+
+      run();
+    </script>
+  </body>
+</html>
